@@ -8,12 +8,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Roboto:wght@300;400;700&display=swap');
 
 body{
-  background: rgb(16, 90, 187);
+  background: #105ABB;
+  background: linear-gradient(to right, #105ABB, #004f75, #009186, #30C9F0 );
+  background-size: 400%;
+  -webkit-animation: animaFundo 7s ease infinite;
+  -moz-animation: animaFundo 7s ease infinite;
+  animation: animaFundo 7s ease infinite;
 }
+
+@-webkit-keyframes animaFundo {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes animaFundo {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
 .container{
   text-align: center;
   width: 300px;
-  margin: 80px auto;
+  margin: 60px auto;
 }
 
 .perfil{
@@ -26,9 +56,11 @@ body{
   background: rgb(190, 188, 188);
 }
 
+
 ul{
   list-style: none;
   margin: 50px 0px;
+  
 }
 
 h1{
